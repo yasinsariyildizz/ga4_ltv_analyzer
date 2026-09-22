@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+.ipynb_checkpoints/
+ga4_ltv_dashboard.html
+

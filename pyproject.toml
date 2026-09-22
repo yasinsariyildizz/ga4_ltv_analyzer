@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ga4-ltv-toolkit"
+version = "0.2.0"
+description = "BigQuery-first observed customer lifetime value analysis for GA4 exports."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "Yasin Sarıyıldız"}]
+dependencies = [
+  "google-cloud-bigquery>=3.25,<4",
+  "pandas>=2.1,<3",
+  "matplotlib>=3.8,<4",
+  "db-dtypes>=1.2,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/yasinsariyildizz/ga4_ltv_analyzer"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ga4_ltv = ["sql/*.sql"]
